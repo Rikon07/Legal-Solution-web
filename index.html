@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solutions</title>
-</head>
-<body>
+    <link rel="shortcut icon" href="./images/business.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/69c46a7e81.js" crossorigin="anonymous"></script>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <!-- Tailwind CSS -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+    @theme {
+        --primary: #B68C5A;
+    }
+    .pop{
+        font-family: "Poppins", serif;
+    }
+    .gara{
+        font-family: "EB Garamond", serif;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <nav class="flex items-center justify-between max-w-[1170px] mx-auto my-12">
+            <!-- Logo Section -->
+            <div class="flex items-center gap-4">
+                <!-- <img class="max-w-11" src="./images/business.png" alt="Haturi Logo">
+                <h1 class="gara text-4xl font-bold">Justice</h1> -->
+                <img src="./images/logo2.png" alt="Justice Logo">
+            </div>
     
-</body>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex breadcrumbs text-base">
+                <ul class="flex gap-5">
+                    <li class="hover:text-[var(--primary)]"><a href="#">Home</a></li>
+                    <li class="hover:text-[var(--primary)]"><a href="#">Services</a></li>
+                    <li class="hover:text-[var(--primary)]"><a href="#">Cases</a></li>
+                    <li class="hover:text-[var(--primary)]"><a href="#">Blog</a></li>
+                    <li class="hover:text-[var(--primary)]"><a href="#">Contact Us</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+    
+            <!-- Mobile Menu Button -->
+            <div class="flex md:hidden">
+                <button id="menu-btn" class="text-2xl">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+    
+            <!-- Button Section -->
+            <div class="hidden md:block">
+                <button class="btn pop bg-[var(--primary)] text-[white] lg:text-lg md:text-xs rounded-lg lg:px-7 hover:bg-gray-100 hover:text-black">
+                    Free Consultation
+                </button>
+            </div>
+        </nav>
+    
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden flex-col gap-4 p-4 bg-white md:hidden">
+            <a href="#" class="hover:text-[var(--primary)]">Home</a>
+            <a href="#" class="hover:text-[var(--primary)]">Services</a>
+            <a href="#" class="hover:text-[var(--primary)]">Cases</a>
+            <a href="#" class="hover:text-[var(--primary)]">Blog</a>
+            <a href="#" class="hover:text-[var(--primary)]">Contact Us</a>
+        </div>
+    </header>
+    
+  </body>
 </html>
