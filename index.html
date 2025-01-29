@@ -39,7 +39,6 @@
                 <h1 class="gara text-4xl font-bold">Justice</h1> -->
                 <img src="./images/logo2.png" alt="Justice Logo">
             </div>
-    
             <!-- Desktop Menu -->
             <div class="hidden md:flex breadcrumbs text-base">
                 <ul class="flex gap-5">
@@ -51,22 +50,19 @@
                     <li><a href="#"></a></li>
                 </ul>
             </div>
-    
             <!-- Mobile Menu Button -->
             <div class="flex md:hidden">
                 <button id="menu-btn" class="text-2xl">
                     <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
-    
             <!-- Button Section -->
             <div class="hidden md:block">
-                <button class="btn pop bg-[var(--primary)] text-[white] lg:text-lg md:text-xs rounded-lg lg:px-7 hover:bg-gray-100 hover:text-black">
+                <button class="btn pop bg-[var(--primary)] text-[white] lg:text-lg md:text-base rounded-lg lg:px-7 hover:bg-gray-100 hover:text-black">
                     Free Consultation
                 </button>
             </div>
         </nav>
-    
         <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden flex-col gap-4 p-4 bg-white md:hidden">
             <a href="#" class="hover:text-[var(--primary)]">Home</a>
@@ -75,6 +71,32 @@
             <a href="#" class="hover:text-[var(--primary)]">Blog</a>
             <a href="#" class="hover:text-[var(--primary)]">Contact Us</a>
         </div>
+
+        <!-- Banner -->
+        <section class="relative max-h-[550px] lg:h-[550px] max-w-[1170px] mx-auto flex flex-col items-center justify-center py-6 px-7 rounded-lg overflow-hidden mb-10 md:mb-16 lg:mb-28">
+            <!-- Background Image -->
+            <div class="absolute inset-0 bg-[url('./images/banner.png')] bg-cover bg-center bg-no-repeat"></div>
+            
+            <!-- Gradient Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-[#111] to-transparent"></div>
+        
+            <!-- Content -->
+            <div class="relative z-10 text-center">
+                <h1 class="text-white text-4xl md:text-6xl lg:text-7xl gara font-bold lg:font-extrabold max-w-2xl">
+                    We Provide Effective Legal Solutions
+                </h1>
+                <p class="text-xs md:text-base pop text-[#E7E7E7] max-w-2xl lg:w-[679px] m-6">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                </p>
+                <div class="flex flex-col justify-center items-center md:flex-row gap-3 md:gap-6">
+                    <input class="max-w-lg lg:w-[500px] md:h-14 lg:h-16 p-3 pl-[19px] rounded-lg bg-white text-black placeholder-[#A0A0A0] focus:outline-none" type="search" placeholder="Search your services">
+                    <button class="pop text-base max-w-40 bg-[var(--primary)] text-white md:text-lg lg:text-xl rounded-lg p-4 md:px-10 md:py-[14px] hover:bg-gray-100 hover:text-black">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </section>
+        
     </header>
     
   </body>
